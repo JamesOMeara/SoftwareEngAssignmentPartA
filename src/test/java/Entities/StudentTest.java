@@ -6,7 +6,7 @@ package Entities;
  * and open the template in the editor.
  */
 
-import java.util.Date;
+import org.joda.time.DateTime;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -17,10 +17,10 @@ import static org.junit.Assert.*;
 public class StudentTest {
     
     private Student s;
-    private Date d;
+    private DateTime d;
             
     public StudentTest() {
-        d = new Date();
+        d = new DateTime();
         s = new Student("james", 10, d);
     }
    

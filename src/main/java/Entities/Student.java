@@ -1,6 +1,7 @@
 package Entities;
 
 import java.util.Date;
+import org.joda.time.DateTime;
 
 /**
  *
@@ -13,14 +14,14 @@ import java.util.Date;
 public class Student {
     private String name;
     private int age;
-    private Date dob;
+    private DateTime dob;
     private String usrname;
     
     
     static int globId = 1000;
     private int id;
     
-    public Student(String name, int age, Date dob){
+    public Student(String name, int age, DateTime dob){
         this.name = name;
         this.age = age;
         this.dob = dob;
@@ -44,11 +45,11 @@ public class Student {
         this.age = age;
     }
 
-    public Date getDob() {
+    public DateTime getDob() {
         return dob;
     }
 
-    public void setDob(Date dob) {
+    public void setDob(DateTime dob) {
         this.dob = dob;
     }
 
