@@ -10,11 +10,11 @@ import java.util.ArrayList;
 public class Module {
     
     private String moudleName;
-    private int moduleID;
+    private String moduleID;
 
     private ArrayList<Student> students = new ArrayList<>();
     
-    public Module(String name, int id){
+    public Module(String name, String id){
         this.moudleName = name;
         this.moduleID = id;    
     }
@@ -27,11 +27,11 @@ public class Module {
         this.moudleName = moudleName;
     }
 
-    public int getModuleID() {
+    public String getModuleID() {
         return moduleID;
     }
 
-    public void setModuleID(int moduleID) {
+    public void setModuleID(String moduleID) {
         this.moduleID = moduleID;
     }
 
