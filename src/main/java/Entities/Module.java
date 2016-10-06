@@ -21,7 +21,7 @@ public class Module {
     
     @Override
     public String toString(){
-        String str = "Module Name: " + this.moudleName + " Module ID: " + this.moduleID;
+        String str = "Module Name: " + this.moudleName + " Module ID: " + this.moduleID + "\n";
         for (Student s : students){
             str += "\t" + s + "\n";
         }

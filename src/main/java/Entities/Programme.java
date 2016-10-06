@@ -25,6 +25,15 @@ public class Programme {
         this.end = end;
         
     }
+    
+    @Override
+    public String toString(){
+        String str = "Programme Name: " + this.courseName + " Start date: " + this.start + " End Date: " + this.end + "\n";
+        for (Module m : modules){
+            str += " \t" + m + "\n";
+        }
+        return str;
+    }
 
     public String getCourseName() {
         return courseName;
