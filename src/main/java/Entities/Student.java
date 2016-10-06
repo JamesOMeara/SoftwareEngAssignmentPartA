@@ -25,8 +25,14 @@ public class Student {
         this.name = name;
         this.age = age;
         this.dob = dob;
-        this.id = this.globId++;
+        this.id = Student.globId++;
                        
+    }
+    
+    @Override
+    public String toString(){
+        String str = "Student Name: " + this.name + " Age: " + this.age + " Date of birth: " + this.dob + " Student ID: " + this.id;
+        return str;
     }
 
     public String getName() {

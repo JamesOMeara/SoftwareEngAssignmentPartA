@@ -19,6 +19,15 @@ public class Module {
         this.moduleID = id;    
     }
     
+    @Override
+    public String toString(){
+        String str = "Module Name: " + this.moudleName + " Module ID: " + this.moduleID;
+        for (Student s : students){
+            str += "\t" + s + "\n";
+        }
+        return str;
+    }
+    
     public String getMoudleName() {
         return moudleName;
     }
